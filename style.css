@@ -1,0 +1,97 @@
+body {
+  background: rgb(145, 98, 98);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 98, 98, 1) 0%,
+    rgba(215, 79, 36, 1) 100%
+  );
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  text-align: center;
+}
+
+button {
+  width: 300px;
+  height: 150px;
+  border: 0;
+  border-radius: 10%;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex > h1 {
+  color: black;
+}
+
+@keyframes an {
+  0% {
+    left: 2000px;
+  }
+  25% {
+    left: 1500px;
+  }
+  50% {
+    left: 1000px;
+  }
+  75% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes animationDance {
+  0% {
+    background: url("./Katya.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    background: url("./Katya2.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+  }
+}
+
+.katya {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  left: 2000px;
+  top: 100px;
+}
+
+.img {
+  height: 380px;
+  position: relative;
+  bottom: 110px;
+  width: 197px;
+  background: url(./Katya.jpg);
+  background-repeat: no-repeat;
+  /* animation: animationDance 4s infinite; */
+}
+
+.katya > p {
+  position: relative;
+  bottom: 130px;
+  font-size: 15px;
+  color: black;
+}
